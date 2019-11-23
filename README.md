@@ -1,24 +1,10 @@
-# project-blume
+## Quick start
 
-## Project setup
-```
-npm install
-```
+## :cloud: Build Setup
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+### install dependencies
+`npm install`
+### serve with hot reload at localhost:8080
+`npm run dev`
+### build for production with minification
+`npm run build`
