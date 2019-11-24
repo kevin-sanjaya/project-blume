@@ -1,23 +1,14 @@
 <template>
-  <div
-    class="sidebar"
-    :data-color="activeColor"
-    :data-image="backgroundImage"
-    :style="sidebarStyle"
-  >
+  <div class="sidebar" :data-color="activeColor">
     <div class="logo">
       <a href="#" class="simple-text logo-mini">
         <div class="logo-img">
-          <img :src="imgLogo" alt="" />
+          <img src="https://i.dlpng.com/static/png/242961_preview.png" alt="" />
         </div>
       </a>
 
-      <a
-        href="https://www.creative-tim.com/product/vue-material-dashboard"
-        target="_blank"
-        class="simple-text logo-normal"
-      >
-        {{ title }}
+      <a href="#" target="_blank" class="simple-text logo-normal">
+        <span>{{ title }}</span>
       </a>
     </div>
     <div class="sidebar-wrapper">
@@ -47,19 +38,11 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Vue MD"
-    },
-    backgroundImage: {
-      type: String,
-      default: require("@/assets/img/sidebar-2.jpg")
-    },
-    imgLogo: {
-      type: String,
-      default: require("@/assets/img/vue-logo.png")
+      default: "Blume - Demo"
     },
     activeColor: {
       type: String,
-      default: "green",
+      default: "blue",
       validator: value => {
         let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
         return acceptedValues.indexOf(value) !== -1;
@@ -78,17 +61,14 @@ export default {
     return {
       autoClose: this.autoClose
     };
-  },
-  computed: {
-    sidebarStyle() {
-      return {
-        backgroundImage: `url(${this.backgroundImage})`
-      };
-    }
   }
 };
 </script>
-<style>
+<style scoped>
+span {
+  text-transform: none;
+}
+
 @media screen and (min-width: 991px) {
   .nav-mobile-menu {
     display: none;
