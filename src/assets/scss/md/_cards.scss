@@ -242,6 +242,12 @@
         @include shadow-big-color($brand-danger);
     }
 
+    [data-background-color="grey"],
+    .md-tabs.md-danger .md-tabs-navigation{
+        background: linear-gradient(60deg, $grey-400, $grey-400);
+        @include shadow-big-color($grey);
+    }
+
     [data-background-color]{
         color: $white-color;
 

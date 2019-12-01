@@ -6,15 +6,15 @@
       <mobile-menu slot="content"></mobile-menu>
       <sidebar-link to="/dashboard">
         <md-icon>directions_car</md-icon>
-        <p>Acura ILX 2016</p>
+        <p>2016 Acura ILX</p>
       </sidebar-link>
       <sidebar-link to="/user">
-        <md-icon>person</md-icon>
-        <p>Honda Accord 2018</p>
+        <md-icon>directions_car</md-icon>
+        <p>2018 Honda Accord</p>
       </sidebar-link>
       <sidebar-link to="/table">
-        <md-icon>content_paste</md-icon>
-        <p>Lexus ES Hybrid 2019</p>
+        <md-icon>directions_car</md-icon>
+        <p>2018 Lexus ES Hybrid</p>
       </sidebar-link>
       <sidebar-link to="/typography">
         <md-icon>library_books</md-icon>

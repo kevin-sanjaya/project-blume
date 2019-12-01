@@ -38,13 +38,21 @@ export default {
   props: {
     title: {
       type: String,
-      default: "Blume - Demo"
+      default: "Autocam - demo"
     },
     activeColor: {
       type: String,
-      default: "blue",
+      default: "grey",
       validator: value => {
-        let acceptedValues = ["", "purple", "blue", "green", "orange", "red"];
+        let acceptedValues = [
+          "",
+          "purple",
+          "blue",
+          "green",
+          "orange",
+          "red",
+          "grey"
+        ];
         return acceptedValues.indexOf(value) !== -1;
       }
     },
@@ -64,9 +72,11 @@ export default {
   }
 };
 </script>
+
 <style scoped>
 span {
   text-transform: none;
+  font-weight: 100;
 }
 
 @media screen and (min-width: 991px) {
